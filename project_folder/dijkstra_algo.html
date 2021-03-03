@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            dijkstra algo
+        </title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <style>
+
+            body 
+            {
+
+                margin: 0px;
+                padding:0px;
+                background:linear-gradient(to right, #000066,#000099);
+                
+                
+            }
+
+
+            #canvas2{
+
+                border: 1px solid rgb(1, 20, 5);
+                margin-left: 180 px;
+                margin-top: 100px;
+                background-color:white;
+                position:relative;
+                right:100px;
+            }
+
+
+
+
+
+
+            .button1{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066; 
+                color:white;
+                border-radius:10cm;
+                position:absolute;
+                top:630px;
+                width:700px;
+                height: 50px;
+                left:300px;
+                opacity:0.8;
+                border: 0;
+                
+            }
+            .button1:hover{background-color:white;
+                color:black;
+                cursor: pointer}
+            .button1:focus{outline: 0;}
+
+
+
+
+
+            .home{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                height:40px;
+                width:160px;
+                border-radius:20cm;
+                position:fixed;
+                left:1115px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+
+            }
+            .home:hover{
+                background-color:white;
+                color:black;
+                cursor: pointer;
+            }
+            .home:focus{outline:0; }
+
+
+
+           
+
+
+            .selector{
+                color:black;
+                font-weight:bold;
+                outline:none;
+                position:absolute;
+                right:250px;
+                top:200px;
+            }
+
+
+
+
+            .selector1{
+                color:black;
+                font-weight:bold;
+                outline:none;
+                position:absolute;
+                right:350px;
+                top:200px;
+            }
+
+            
+
+            #sol_node{
+                font-size:15px;
+                position:relative;
+                left:100px;
+                
+                
+               
+                height:1000px;
+                
+                color:white;
+
+            }
+
+            #sol_dist{
+                font-size:10px;
+                position:relative;
+                left:100px;
+               
+                height:1000px;
+                
+                color:#FF0066;
+
+            }
+
+            .bubble_def{
+                position:absolute;
+                top:30px;
+                left:150px;
+                color:white;
+                font-size:14px;
+            }
+
+
+
+
+
+        </style>
+
+
+
+
+        
+    </head>
+    <body>
+        <button type="button"  onclick= "window.location.href='home_logged_in.html';" class="home">Home</button>
+        
+        <input class ="button1" type="button" value="Simulate"  onclick= "sim()">
+        <p>
+            <canvas id="canvas1"></canvas>
+            <canvas id ="canvas2"></canvas>
+        </p>
+
+        <form class = "selector">
+            SINK
+            <br><br>
+            <select id= "K_select">
+              <option value=A>0</option>
+              <option value=B>1</option>
+              <option value=C>2</option>
+              <option value=D>3</option>
+              <option value=E>4</option>
+              <option value=F>5</option>
+            </select>
+          </form>
+
+
+          <form class = "selector1">
+            SOURCE
+            <br><br>
+            <select id= "K_select1">
+              <option value=A>0</option>
+              <option value=B>1</option>
+              <option value=C>2</option>
+              <option value=D>3</option>
+              <option value=E>4</option>
+              <option value=F>5</option>
+            </select>
+          </form>
+
+
+          <pre class="bubble_def">
+            Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm) 
+            is an algorithm for finding the shortest paths between nodes in a graph, which may represent,
+            for example, road networks. The algorithm creates a tree of shortest paths from the starting 
+            vertex, the source, to all other points in the graph.
+        </pre>
+
+        <script type="text/javascript" src ="dijkstra_algo.js"></script>
+    </body>
+</html> 

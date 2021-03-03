@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <title>linear search</title>
+
+        <style>
+            body 
+            {
+
+                margin: 0px;
+                padding:0px;
+                background:linear-gradient(to right, #afaffc,#0404f7);
+               
+            }
+
+            #canvas1
+            {
+                position:relative;
+                
+                height:450px;
+                left:20px;
+                background-color:white;
+                
+            }
+
+
+
+            .button1{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066; 
+                color:white;
+                border-radius:10cm;
+                position:relative;
+                top:630px;
+                width:600px;
+                height: 50px;
+                left:300px;
+                opacity:0.8;
+                border: 0;
+                
+            }
+            .button1:hover{background-color:white;
+                color:black;}
+            .button1:focus{outline: 0;}
+
+            .button3{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066;
+                color:white;
+               
+                position:fixed;
+                top:0px;
+                left:10px;
+                opacity:0.8;
+                border: 0;
+                height:40px;
+                width:160px;
+                border-radius:40cm;
+
+            }
+            .button3:hover{
+                cursor:pointer;
+            }
+            .button3:focus{outline: 0;}
+
+
+
+
+
+            #canvas2
+            {
+                
+                top:0px;
+                background-color:white;
+                position:relative;
+                left:150px;
+                height:450px;
+                
+            }
+
+            .home{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                height:40px;
+                width:160px;
+                border-radius:20cm;
+                position:fixed;
+                left:1100px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+
+            }
+            .home:hover{
+                background-color:white;
+                color:black;
+                cursor:pointer;
+            }
+            .home:focus{outline:0; }
+
+            .bubble_def{
+                color:white;
+                font-size:14px;
+            }
+
+            .selector{
+                color:black;
+                font-weight:bold;
+                outline:none;
+                position:absolute;
+                left:50px;
+                top:350px;
+            }
+
+
+            
+
+
+
+    </style>
+
+
+
+    </head>
+    <body>
+
+
+
+        <form class = "selector">
+            Search
+            <br><br>
+            <select id= "K_select">
+              <option value=70>70</option>
+              <option value=170>170</option>
+              <option value=270>270</option>
+              <option value=370>370</option>
+              <option value=470>470</option>
+              <option value=570>570</option>
+              <option value=670>670</option>
+              <option value=770>770</option>
+              <option value=870>870</option>
+              <option value=970>970</option>
+
+            </select>
+          </form>
+  
+        
+        <button type="button"  onclick= "window.location.href='home_logged_in.html';" class="home">Home</button>
+        <input class ="button1" type="button" value="search"  onclick= "sim()">
+        <button type="button"  onclick= "window.location.href='linear_search.html';" class="button3">Search new</button>
+        
+        
+        
+        <pre class="bubble_def">
+                    Linear search is a very simple search algorithm. In this type of search, a sequential
+                    search is made over all items one by one. Every item is checked and if a match is found then 
+                    that particular item is returned, otherwise the search continues till the end of the data collection.
+        </pre>
+        
+        
+        
+        <p>
+            
+            <canvas id ="canvas2"></canvas>
+        </p>
+        <script type="text/javascript" src ="linear_search.js"></script>
+        
+    </body>
+</html>

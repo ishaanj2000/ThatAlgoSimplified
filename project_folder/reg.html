@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+        <title>
+            Subscribe
+        </title>
+        <style>
+        body{
+            background:linear-gradient(to right, #1f08eb,#4040a1);
+        }
+        #f_name{
+            position:absolute;
+            top:250px;
+            left:540px;
+        }
+        #l_name{
+            position:absolute;
+            top:300px;
+            left:540px; 
+        }
+        #email{
+            position:absolute;
+            top:350px;
+            left:540px;
+        }
+        #pass{
+            position:absolute;
+            top:400px;
+            left:540px;
+        }
+        .head{
+            position:absolute;
+            left:350px;
+            color:#FF0066;
+        }
+        #sub{
+            position:absolute;
+            left:500px;
+            top:500px;
+            background-color:#FF0066;
+            width:300px;  
+        }
+        #error{
+            position:absolute;
+            left:500px;
+            top:450px;
+        }
+        </style>
+
+    </head> 
+    <body>
+        
+            <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+
+
+            <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+            <script>
+            
+            var firebaseConfig = {
+                apiKey: "AIzaSyCSfiUIwMMEqIxH8eZjvH_Hx9iE-Lzw2Lw",
+                authDomain: "thatalgosimplified.firebaseapp.com",
+                databaseURL: "https://thatalgosimplified-default-rtdb.firebaseio.com",
+                projectId: "thatalgosimplified",
+                storageBucket: "thatalgosimplified.appspot.com",
+                messagingSenderId: "486107989529",
+                appId: "1:486107989529:web:00c4ed002f03e3da4a0c88",
+                measurementId: "G-GENMTN20GK"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            function subscribe(){
+                var f_name = document.getElementById("f_name").value;
+                var l_name = document.getElementById("l_name").value;
+                var email = document.getElementById("email").value;
+                var pass = document.getElementById("pass").value;
+                firebase.auth().createUserWithEmailAndPassword(email, pass).then(function(){
+
+                    alert("Registration Successful")
+
+                    window.location.href= "home.html";
+
+                }).catch(function(error){
+
+                    var errorcode = error.code;
+                    var errormessage = error.message;
+                    document.getElementById("error").innerHTML= errormessage;
+
+                });
+            }
+            </script>
+
+                <h1 class="head">Let's begin by creating an account!</h1>
+                <input type="text" id ="f_name" placeholder="First Name" name="f_name" required/>
+                <br>
+                <input type="text" id ="l_name" placeholder="Last Name" name="l_name" required/>
+                <br>
+                <input type="text" id ="email" placeholder="Email" name="email" required/>
+                <br>
+            
+                <input type="password"  id ="pass" placeholder="Password" name="pass" required/>
+                <br>
+                <input id = "sub" type="submit" onClick="subscribe()" value ="Subscribe" name="submit"/>
+                <p id="error"></p>
+    </body>
+</html>

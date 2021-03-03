@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>knn</title>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <style>
+
+            body{
+                margin: 0px;
+                padding:0px;
+                
+                background:linear-gradient(to right, #000066,#000099);
+                
+            }
+            #canvas1
+            {
+                position:relative;
+                background-color:white;
+                left:250px;
+                top:120px; 
+            }
+
+
+
+            .home{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                height:40px;
+                width:160px;
+                border-radius:20cm;
+                position:fixed;
+                left:1100px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+
+            }
+            .home:hover{
+                background-color:white;
+                color:black;
+                cursor: pointer;
+            }
+            .home:focus{outline:0; }
+
+
+            .button1{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066; 
+                color:white;
+                border-radius:10cm;
+                position:absolute;
+                top:630px;
+                width:700px;
+                height: 50px;
+                left:300px;
+                opacity:0.8;
+                border: 0;
+                
+            }
+            .button1:hover{background-color:white;
+                color:black;
+                cursor: pointer}
+            .button1:focus{outline: 0;}
+
+
+
+
+            .button3{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066;
+                color:white;
+               
+                position:fixed;
+                top:0px;
+                left:10px;
+                opacity:0.8;
+                border: 0;
+                height:40px;
+                width:160px;
+                border-radius:40cm;
+
+            }
+            .button3:hover{
+                background-color:white;
+                color:black;
+                cursor: pointer;
+            }
+            .button3:focus{outline: 0;
+            }
+
+            .selector{
+                color:black;
+                font-weight:bold;
+                outline:none;
+                position:absolute;
+                right:250px;
+                top:200px;
+            }
+
+
+            .bubble_def{
+                position:absolute;
+                top:30px;
+                left:150px;
+                color:white;
+                font-size:14px;
+            }
+
+
+
+
+            
+
+            
+
+              
+
+
+            
+
+
+            </style>
+    </head>
+    <body>
+        
+        <button type="button"  onclick= "window.location.href='home_logged_in.html';" class="home">Home</button>
+        <input class ="button1" type="button" value="Simulate"  onclick= "create_circle()">
+        <button type="button"  onclick= "window.location.href='knn.html';" class="button3">New Data</button>
+        <canvas id="canvas1"></canvas>
+        
+
+        
+        <form class = "selector">
+            Select K-value
+            <br><br>
+            <select id= "K_select">
+              <option value=2>two</option>
+              <option value=3 >three</option>
+              <option value=4>four</option>
+              <option value=5>five</option>
+            </select>
+          </form>
+
+          <script type="text/javascript" src ="knn.js"></script>
+          
+
+          <pre class="bubble_def">
+            K-nearest neighbors (KNN) algorithm uses ‘feature similarity’ to predict the values of
+            new datapoints which further means that the new data point will be assigned a value based 
+            on how closely it matches the points in the training set.
+        </pre>
+
+
+          
+
+
+        
+    </body>
+</html>
+

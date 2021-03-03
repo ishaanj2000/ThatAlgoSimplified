@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <title>Let's start</title>
+        <style>
+            body{
+                background:linear-gradient(to right, #000066,#000099);
+                color:white;
+                font-size:30px;
+                text-align:center;
+            }
+            .intro{
+                position:fixed;
+                top:200px;
+                padding:100px;
+            }
+
+            .start{
+                position:fixed;
+                top:400px;
+                left:550px;
+                height:50px;
+                width:160px;
+                border-radius: 5px;
+                border:0;
+                background-color: #FF0066;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:16px;
+            }
+
+            .start:hover{
+                background-color:#000099;
+                color:white;
+                border:1px solid #FF0066;
+                cursor:pointer;
+                text-decoration: underline;
+                
+            }
+            .start:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+            b{
+                color:#FF0066;
+                
+            }
+
+            .title{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                
+                color:white;
+                position:fixed;
+                left:300px;
+                border: none;
+                font-size:100px;
+                outline:none;
+            }
+
+            .title:hover{
+                cursor:pointer;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "intro">
+       
+        Here at <b><i>'ThatAlgoSimplified'</i></b> we try to make complex algorithms
+                        easy to understand 
+    
+        </div>
+        <button class="start" onclick= "window.location.href='home.html';" >
+            Let's start 
+        </button>
+
+       
+        <a type="logo"  onclick= "window.location.href='home.html';" class="title">ThatA<b>✔</b>goSimplified</a>
+        
+    </body>
+</html>

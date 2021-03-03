@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <title>selection sort</title>
+
+        <style>
+            body 
+            {
+
+                margin: 0px;
+                padding:0px;
+                background:linear-gradient(to right, #afaffc,#0404f7);
+               
+            }
+
+            #canvas1
+            {
+                position:relative;
+                top:100px;
+                
+                height:450px;
+                left:50px;
+                background-color:white;
+                
+            }
+
+
+
+            .button1{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066; 
+                color:white;
+                border-radius:10cm;
+                position:relative;
+                top:630px;
+                width:600px;
+                height: 50px;
+                left:200px;
+                opacity:0.8;
+                border: 0;
+                
+            }
+            .button1:hover{background-color:white;
+                color:black;}
+            .button1:focus{outline: 0;}
+
+
+
+
+            .button3{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066;
+                color:white;
+               
+                position:fixed;
+                
+                left:10px;
+                opacity:0.8;
+                border: 0;
+                height:40px;
+                width:160px;
+                border-radius:40cm;
+
+            }
+            .button3:hover{
+                cursor:pointer;
+            }
+            .button3:focus{outline: 0;}
+
+
+
+
+
+            #canvas2
+            {
+                
+                
+                background-color:white;
+                position:relative;
+                left:150px;
+                height:450px;
+                top:100px;
+                
+            }
+
+            .home{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                height:40px;
+                width:160px;
+                border-radius:20cm;
+                position:fixed;
+                left:1100px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+
+            }
+            .home:hover{
+                background-color:white;
+                color:black;
+                cursor:pointer;
+            }
+            .home:focus{outline:0; }
+
+            .selection_def{
+                position: absolute;
+                
+                color:white;
+                font-size:14px;
+            }
+
+            
+
+
+
+    </style>
+
+
+
+    </head>
+    <body>
+  
+        
+        <button type="button"  onclick= "window.location.href='home_logged_in.html';" class="home">Home</button>
+        <input class ="button1" type="button" value="click to iterate"  onclick= "draw_charta()">
+        <button type="button"  onclick= "window.location.href='selection_sort.html';" class="button3">New Data</button>
+        
+        <pre class="selection_def">
+            The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) 
+            from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+        
+            In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray 
+            is picked and moved to the sorted subarray.
+
+
+        </pre>
+        
+        
+        
+        <p>
+            <canvas id="canvas1"></canvas>
+            <canvas id ="canvas2"></canvas>
+        </p>
+        <script type="text/javascript" src ="selection_sort.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <title>bubble sort</title>
+        
+        </script>
+        
+
+        <style>
+            body 
+            {
+
+                margin: 0px;
+                padding:0px;
+                background:linear-gradient(to right, #afaffc,#0404f7);
+               
+            }
+
+            #canvas1
+            {
+                position:relative;
+                
+                height:450px;
+                left:20px;
+                background-color:white;
+                
+            }
+
+
+
+            .button1{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066; 
+                color:white;
+                border-radius:10cm;
+                position:relative;
+                top:630px;
+                width:600px;
+                height: 50px;
+                left:200px;
+                opacity:0.8;
+                border: 0;
+                
+            }
+            .button1:hover{background-color:white;
+                color:black;}
+            .button1:focus{outline: 0;}
+
+            .button3{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                background-color:#FF0066;
+                color:white;
+               
+                position:fixed;
+                top:0px;
+                left:10px;
+                opacity:0.8;
+                border: 0;
+                height:40px;
+                width:160px;
+                border-radius:40cm;
+
+            }
+            .button3:hover{
+                cursor:pointer;
+            }
+            .button3:focus{outline: 0;}
+
+
+
+
+
+            #canvas2
+            {
+                
+                top:0px;
+                background-color:white;
+                position:relative;
+                left:150px;
+                height:450px;
+                
+            }
+
+            .home{
+                font-family:'Annie Use Your Telescope';font-size: 22px;
+                height:40px;
+                width:160px;
+                border-radius:20cm;
+                position:fixed;
+                left:1100px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+
+            }
+            .home:hover{
+                background-color:white;
+                color:black;
+                cursor:pointer;
+            }
+            .home:focus{outline:0; }
+
+            .bubble_def{
+                color:white;
+                font-size:14px;
+            }
+
+            
+
+
+
+    </style>
+
+
+
+    </head>
+    <body >
+  
+        
+        <button type="button"  onclick= "window.location.href='home_logged_in.html';" class="home">Home</button>
+        <input class ="button1" type="button" value="click to iterate"  onclick= "draw_charta()">
+        
+        <button type="button"  onclick= "window.location.href='bubble_sort.html';" class="button3">New Data</button>
+        
+        <pre class="bubble_def">
+            Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent 
+            elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as 
+            its average and worst case complexity are of Ο(n2) where n is the number of items.
+        </pre>
+        
+        
+        
+        <p>
+            <canvas id="canvas1"></canvas>
+            <canvas id ="canvas2"></canvas>
+        </p>
+        <script type="text/javascript" src ="bubble_sort.js"></script>
+    </body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="login.html" rel="import" />
+        <title>home</title>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+
+        <style>
+            body{
+                
+                background:linear-gradient(to right, #1f08eb,#03033f);
+                font-family:Open Sans,Helvetica,Arial,sans-serif;
+                font-size: 22px;
+                margin: none;
+                height: 100%;
+                width:100%;
+                float:right;
+                
+     
+            }
+
+            .button3{
+                
+                font-size: 30px;
+                font-family:'Annie Use Your Telescope';
+                color:white;
+                position: absolute;
+                top:20px;
+                left:50px;
+                opacity:0.8;
+                border: 0;
+                height:40px;
+                width:160px;
+                text-decoration:underline;
+            }
+            .button3:hover{
+                cursor: pointer;
+                
+            }
+
+            b{
+                color:rgb(255, 82, 172);
+            }
+
+
+            .tag{
+                position:absolute;
+                color:rgb(255, 82, 172);
+                top:60px;
+                left:50px;
+                font-size:15px;
+                
+
+            }
+
+        
+
+        .login{
+                position: absolute;
+                top:20px;
+                left:1000px;
+                height:50px;
+                width:160px;
+                border-radius: 5px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:16px;
+            }
+
+
+            .login:hover{
+                background-color:#000099;
+                color:white;
+                border:1px solid #FF0066;
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .login:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+
+
+            .sub{
+                position: absolute;
+                top:350px;
+                left:100px;
+                height:50px;
+                width:160px;
+                border-radius: 5px;
+                border: 0;
+                background-color: #FF0066;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:16px;
+            }
+
+
+            .sub:hover{
+                background-color:white;
+                color:black;
+                
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .sub:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+
+
+            .line0{
+                color:gray;
+                position:absolute;
+                top:550px;
+            }
+
+
+            .head{
+                position:absolute;
+                top:480px;
+                left:10px;
+                color:white;
+                font-size:40px;
+                
+            }
+
+
+
+            .about{
+                position: absolute;
+                top:30px;
+                left:350px;
+                height:50px;
+                width:160px;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:20px;
+            }
+
+
+            .about:hover{
+                
+                color:white;
+                
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .about:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+
+            .team{
+                position: absolute;
+                top:30px;
+                left:500px;
+                height:50px;
+                width:160px;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:20px;
+            }
+
+
+            .team:hover{
+                
+                color:white;
+                
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .team:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+
+
+            .content{
+                position: absolute;
+                top:30px;
+                left:650px;
+                height:50px;
+                width:160px;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:20px;
+            }
+
+
+            .content:hover{
+                
+                color:white;
+                
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .content:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+
+
+
+            .quote{
+                position: absolute;
+                top:30px;
+                left:800px;
+                height:50px;
+                width:160px;
+                color:white;
+                transition-duration: 0.6s;
+                font-size:20px;
+            }
+
+
+            .quote:hover{
+                
+                color:white;
+                
+                cursor:pointer;
+                text-decoration: underline;
+                
+                
+                
+            }
+            .quote:focus{outline:0;
+                transform : rotateX(360deg); 
+                
+            }
+
+            .front{
+                position: absolute;
+                top:100px;
+                right:50px;
+                float:right;
+                height:400px;
+                width:500px;
+            }
+
+            .rect{
+                position:absolute;
+                top:100px;
+                background-color:white;
+                height:400px;
+                width:1270px;
+                
+                
+
+            }
+            .tagline{
+                position:absolute;
+                font-size: 25px;
+                top:200px;
+                left:50px;
+            }
+
+
+            .bubble_sort{
+                position: absolute;
+                top:900px;
+                left:200px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                background-color:rgb(37, 34, 218);
+                
+                border:none;
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            .bubble_sort:focus{
+                outline:0;
+                 
+                
+            }
+
+
+
+
+
+            .knn{
+                position: absolute;
+                top:1000px;
+                left:200px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                border:none;
+                background-color:rgb(37, 34, 218);
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            
+            
+            .knn:focus{
+                outline:0;
+                 
+                
+            }
+
+
+
+            .dijekstra{
+                position: absolute;
+                top:900px;
+                left:700px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                border:none;
+                background-color:rgb(37, 34, 218);
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            
+            .dijekstra:focus{
+                outline:0;
+                 
+                
+            }
+
+            .content_para{
+                position: absolute;
+                top:600px;
+                left:350px;
+                color:white;
+                background-color:rgb(241, 134, 218);
+                text-align:center;
+            }
+
+            .explore{
+                position: absolute;
+                top:800px;
+                left:450px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                background-color:rgb(235, 235, 245);
+                
+                border:none;
+            }
+
+
+            .explore:hover{
+                
+                color:#FF0066;
+                
+                
+                text-decoration: underline;
+                
+                
+                
+            }
+            .explore:focus{
+                outline:0;
+                 
+                
+            }
+
+            .insertion{
+                position: absolute;
+                top:1000px;
+                left:700px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                border:none;
+                background-color:rgb(37, 34, 218);
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            
+            .insertion:focus{
+                outline:0;
+                 
+                
+            }
+
+
+
+            .quick{
+                position: absolute;
+                top:1100px;
+                left:700px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                border:none;
+                background-color:rgb(37, 34, 218);
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            
+            .quick:focus{
+                outline:0;
+                 
+                
+            }
+
+
+
+            .quick1{
+                position: absolute;
+                top:1100px;
+                left:200px;
+                height:50px;
+                width:300px;
+                color:#FF0066;
+                transition-duration: 0.6s;
+                font-size:20px;
+                border:none;
+                background-color:rgb(37, 34, 218);
+                box-shadow: 5px 10px #ef7ff3;
+                
+            }
+
+
+            .quick1:focus{
+                outline:0;
+                 
+                
+            }
+
+
+            .person1{
+                position: absolute;
+                top:1400px;
+                left:200px;
+                height:100px;
+                width:100px;
+                border-radius: 50px;
+
+            }
+
+
+            .person2{
+                position: absolute;
+                top:1400px;
+                left:550px;
+                height:100px;
+                width:100px;
+                border-radius: 50px;
+
+            }
+
+
+            .person3{
+                position: absolute;
+                top:1400px;
+                left:900px;
+                height:100px;
+                width:100px;
+                border-radius: 50px;
+
+            }
+
+
+            .p1_d{
+                position:absolute;
+                top:1500px;
+                left:170px;
+                height:200px;
+                width: 150px;
+                color:white;
+                border-radius:200px;
+                font-size:12px;
+                text-align: center;
+                
+            }
+
+            .p2_d{
+                position:absolute;
+                top:1500px;
+                left:530px;
+                height:200px;
+                width: 150px;
+                color:white;
+                font-size:12px;
+                text-align: center;
+                
+            }
+
+            .p3_d{
+                position:absolute;
+                top:1500px;
+                left:870px;
+                height:200px;
+                width: 150px;
+                color:white;
+                font-size:12px;
+                text-align: center;
+            }
+
+
+            .line{
+                color:gray;
+                position:absolute;
+                top:1400px;
+            }
+
+
+
+            .person_head{
+                position:absolute;
+                top:1250px;
+                left:10px;
+                color:white;
+                font-size:40px;
+                
+                
+                
+            }
+
+
+
+
+
+            .emp1{
+                position: absolute;
+                top:1900px;
+                left:400px;
+                height:100px;
+                width:100px;
+                border-radius: 50px;
+
+            }
+
+
+            .emp2{
+                position: absolute;
+                top:1900px;
+                left:800px;
+                height:100px;
+                width:100px;
+                border-radius: 50px;
+
+            }
+            
+
+
+
+            .e1_d{
+                position:absolute;
+                top:2000px;
+                left:370px;
+                height:200px;
+                width: 150px;
+                color:white;
+                border-radius:200px;
+                font-size:12px;
+                text-align: center;
+                
+            }
+
+            .e2_d{
+                position:absolute;
+                top:2000px;
+                left:770px;
+                height:200px;
+                width: 150px;
+                color:white;
+                font-size:12px;
+                text-align: center;
+                
+            }
+
+            .line1{
+                color:gray;
+                position:absolute;
+                top:1900px;
+            }
+
+            .emp_head{
+                position:absolute;
+                top:1800px;
+                left:10px;
+                color:white;
+                font-size:40px;
+                
+            }
+
+
+
+
+    .footer{
+    position:absolute;
+    top:2400px;
+    height:500px;
+    width:1270px;
+    padding:none;
+    background-color:rgb(189, 188, 245);
+    background-size:cover;
+    
+}
+
+
+
+
+
+.email_box{
+  height :50px;
+  font-size:20px;
+  width:500px;
+  position:absolute;
+  left:50px;
+  outline: none;
+  
+
+
+}
+
+.newsletter{
+  color:#FF0066;
+  position:absolute;
+  left:20px;
+  font-size:20px;
+  
+  
+}
+
+.subscribe{
+  background-color:#FF0066;
+  color:white;
+  position:absolute;
+  left:30;
+  top:250px;
+  font-size:30px;
+  border-radius: 30px;
+  height:50px;
+  width:300px;
+  outline: none;
+  border: none;
+  opacity: 0.6;
+  
+}
+
+
+.subscribe:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  opacity: 1.0;
+  
+}
+
+
+.down_button{
+  font-size: 30px;
+  position: relative;
+  left:800px;
+  background:none;
+  color:white;
+  padding:20px;
+  outline:none;
+  border:none;
+  
+}
+
+.down_button:hover{
+  background-color:#FF0066;
+  cursor:pointer;
+  
+}
+
+
+
+
+
+.copyright{
+  color:white;
+  font-size:20px;
+  text-align:center;
+  background-color:#FF0066;
+  opacity:0.6;
+  
+  
+}
+
+
+
+
+
+
+
+
+        </style>
+
+    </head>
+    
+    
+    
+    
+    <body>
+
+        <div class ="rect"></div>
+            
+            <b class ="tagline">Providing Knowledge of the most used
+                <br><br>
+                algorithms in computer Science...
+            </b>
+        
+
+        <div>
+            <a class="about" href="#p_head" >
+               About Us
+            </a>
+            
+
+            <a class="content"  href="#content">
+                Content
+            </a>
+            
+            <a class="team"  href="#e_head">
+                Our Team
+            </a>
+
+            <a class="quote" onClick="parent.location='http://localhost:8888/quotes.php'" >
+                Algo-Quotes
+            </a>
+
+          
+        </div>
+
+        <button class="login"  onClick="parent.location='login.html'">
+           Login
+        </button>
+
+        <button class="sub"  onClick="parent.location='reg.html'">
+            Subscribe
+        </button>
+
+        
+
+        
+        <img class ="front" src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/04/how-ecommerce-companies-can-care-for-their-customers-5eb56dfe6c64e-1520x800.png" alt="hello">
+        
+
+        <a  onclick= "window.location.href='home.html';" class="button3">ThatA<b>✔</b>goSimplified</a>
+        <div class="tag">Algorithms Made Simple</div>
+
+        <p class="head">For those who target</p>
+        <p class="line0">__________________________________________________________________________________________</p>
+
+
+        <div class="content_div">
+
+            <img src = "https://tradebrains.in/wp-content/uploads/2018/09/what-are-fang-stocks.png" class ="content_para"  direction="up" height="150" width= "500" behavior="alternate" >
+                
+            </marquee>
+            <button id ="content"class = "explore" >Explore</button>
+            <button class = "bubble_sort" >>Bubble Sort 🔒</button>
+            <button class = "knn" >>K-Nearest Neighbours 🔒</button>
+            <button class = "dijekstra">>Dijkstra's Shortest Path 🔒</button>
+            <button class = "insertion" >>Selection Sort 🔒</button>
+            <button class = "quick" >>Binary Search 🔒</button>
+            <button class = "quick1" >>Linear Search 🔒</button>
+        </div>
+
+       
+
+       <a><p id ="p_head" class="person_head">Experience with Us</p></a> 
+        <div>
+            <p class="line">__________________________________________________________________________________________</p>
+            <img src ="https://cdn4.vectorstock.com/i/1000x1000/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.jpg" class="person1">
+            <img src ="https://www.pngitem.com/pimgs/m/75-758538_straight-face-smiling-face-woman-face-animation-hd.png" class="person2">
+            <img src ="https://cdn3.vectorstock.com/i/1000x1000/63/42/young-man-face-cartoon-vector-19116342.jpg" class="person3">
+        </div>
+        
+        
+        <div class = "p1_d"><br>This is John: "I have been working with <b>ThatAlgoSimplified</b> for 2 years.It's great!"</div>
+        <div class = "p2_d"><br>Meet Tina: "This is a great platform to learn ALGOS. Information is intresting. It helps</div>
+        <div class = "p3_d"><br>Say Hello to Tony: "I am pleased to share my experience of this website, which has been simply amazing and cannot be matched</div>
+        
+        <a><p id ="e_head"  class="emp_head">Our Team</p></a>
+
+        <div>
+            <p class="line1">__________________________________________________________________________________________</p>
+            <img src ="data:image/jpeg;base64,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" class="emp1">
+            <img src ="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg" class="emp2">
+        </div>
+        
+        
+        <div class = "e1_d"><br><b>This is our founder Ishaan, say hi!</b></div>
+        <div class = "e2_d"><br><b>Meet our founder Narayan</b></div>
+
+
+
+
+
+
+        <div class = " footer">
+            <br>
+            <div class = "newsletter">EMAIL NEWSLETTER
+            <pre>
+            
+            
+            <input type="text"  class ="email_box" placeholder="Email">
+            <input type ="button" class="subscribe" value ="SUBSCRIBE"> 
+          </pre>
+    
+        </div>
+    
+    
+          <div>
+    
+            <br>
+            <br>
+            <input class ="down_button" value ="Help & Support" type ="button">
+            <br>
+            <input class ="down_button" value ="Privacy & Policy" type ="button">
+            <br>
+            <input class ="down_button" value ="About Us" type ="button">
+            <br>
+            <input class ="down_button" value ="Contact Us" type ="button">
+            
+           
+          
+          </div>
+          <br>
+    
+           <div class ="copyright">Copyright ThatAlgoSimplified © 2021, All Rights reserved.</div>
+    
+          </div>
+    
+    
+
+
+
+
+
+    
+
+    
+    </body>
+</html> 
+
+
+
+
+
+
+
+
+
