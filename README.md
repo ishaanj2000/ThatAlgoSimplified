@@ -1,7 +1,8 @@
 # ThatAlgoSimplified
 Algorithms Visual repo
-Contains ML AND CS ALGOS 
 
+
+ML AND CS ALGOS 
 DIJEKSTRA'S
 BUBBLE SORT 
 SELECTION SORT 
